@@ -1,8 +1,14 @@
 /*CUSTOM PROPERTIES*/
-/* :root{
-    --bg-color: white;
-    --primary-color: brown;
-} */
+ :root{
+    --nav-color: #255ee9;
+    --text-color: white;
+    --alt-text-color: black;
+    --dark-button-bg: #323232;
+    --alt-main-bg-color: #f6f6f6;
+    --footer-bg-color: rgb(50, 50, 50);
+    --alt-item-color: #6c80c8;
+
+}
 
 /*RESET*/
 *{
@@ -122,8 +128,8 @@ p{
 }
 
 .black-button.round-container{
-    background-color: #323232;
-    color: white;
+    background-color: var(--dark-button-bg);
+    color: var(--text-color)
 }
 
 /*CONTENT*/
@@ -141,7 +147,7 @@ main{
 }
 
 .graybg{
-    background-color: gray /*#f6f6f6;*/
+    background-color: var(--alt-main-bg-color);
 }
 
 /*MAIN CONTENT*/
@@ -180,7 +186,7 @@ main{
     display: flex;
     width: 100%;
     margin: auto;
-    height: 800px;
+    height: 1000px;
 }
 
 .main-content-bottom{
@@ -210,14 +216,19 @@ main{
 .main-content-row.main-text{
 }
 
+.main-content-row .round-container{
+    margin-top: 1.5rem;
+    width: 200px;
+    background-color: var(--alt-item-color);
+    color: var(--text-color);
+}
+
 
 /*FOOTER*/
 footer{
     width: 100%;
     height: 600px;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    background-color: rgb(50, 50, 50);
+    background-color: var(--footer-bg-color);
 }
 
 .footer-top{
@@ -231,7 +242,7 @@ footer{
 }
 
 .flex-foot{
-    width: calc(100% / 3);
+    width: 70%;
     height: 100%;
     display: flex;
     /* flex-direction: row;
@@ -240,24 +251,47 @@ footer{
     align-self: flex-end; */
 }
 
+h3{
+    font-size: 28px;
+}
+
+h3{
+    
+}
+
+h4{
+    font-size: 20px;
+}
+
+footer h3, footer h4{
+    color: var(--alt-item-color);
+}
+
 .foot-column{
-    width: 100px;
+    width: calc(100% / 7);
     height: 100%;
-    background-color: white;
-    border: 2px dashed black;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--text-color);
+}
+
+.foot-column img{
+    width: 35px;
+    height: 24px;
+}
+
+.foot-column li{
+    list-style-type: none;
+    margin-top: 10px;
 }
 
 .foot-column.cyanbg{
-    background-color: cyan;
-    border: 2px dashed white;
+   
 }
 
 .foot-column.salmonbg{
-    background-color: salmon;
     flex-grow: 1;
 }
 
@@ -269,7 +303,12 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    border-top: 1px solid white;
+    border-top: var(--alt-item-color) 1px solid;
+}
+
+.footer-icons i{
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 .ending{
@@ -279,17 +318,22 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: cyan;
     align-self: flex-end;
 }
 
 .ending-item{
     width: 100px;
     height: 2rem;
-    background-color: white;
-    border: 2px dashed black;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+footer .round-container{
+    background-color: var(--alt-item-color);
+}
+
+footer .round-container a{
+    color: white;
 }
