@@ -24,18 +24,19 @@
 header{
     width: 100%;
     height: 600px;
-    background-color: darkblue;
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
 }   
 /*Nav*/
 nav{
     width: 100%;
     height: 5rem;
-    background-color: #add8e6;
+    background-color: #255ee9;
     padding: 1rem;
 }
 
 .navbar{
-    width: 50%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -44,14 +45,21 @@ nav{
 }
 
 .nav-item{
-    width: calc(100% / 4);
+    width: calc(100% / 7);
     height: 2.2rem;
-    background-color: orange;
-    border: 2px dashed black;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+a{
+    color: black;
+}
+
+li a{
+    color: white;
 }
 
 .nav-item.big{
@@ -65,6 +73,16 @@ nav{
 }
 .flex-ul li{
     margin: 4rem;
+}
+
+.round-container{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero{
