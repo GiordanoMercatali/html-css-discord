@@ -141,7 +141,7 @@ main{
 }
 
 .main-section.graybg{
-    background-color: gray;
+    background-color: gray /*#f6f6f6;*/
 }
 
 /*MAIN CONTENT*/
@@ -176,10 +176,19 @@ main{
     flex-grow: 1;
 }
 
-.main-content-column.greenbg{
-    background-color: green;
-    width: 80%;
+.main-content-row{
+    width: 100%;
+    height: 250px;
+}
+
+.main-content-row.main-image{
+    width: 100%;
     height: 500px;
+    display: block;
+}
+
+.main-content-row.main-text{
+    display: block;
 }
 
 
