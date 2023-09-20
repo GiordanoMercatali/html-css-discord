@@ -25,6 +25,10 @@
     flex-wrap: wrap;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /*HEADER*/
 header{
     width: 100%;
